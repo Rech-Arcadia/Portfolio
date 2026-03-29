@@ -30,7 +30,7 @@ export default {
   methods: {
     animateStats() {
       this.stats.forEach((stat) => {
-        const increment = stat.target / 100
+        const increment = stat.target / 250
 
         const update = () => {
           if (stat.value < stat.target) {
