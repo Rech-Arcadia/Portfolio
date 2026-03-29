@@ -134,8 +134,8 @@ function starStyle(n) {
     left: 50%;
     transform: translate(-50%, -50%);
     background: radial-gradient(ellipse at center,
-            rgba(0, 100, 60, 0.32) 0%,
-            rgba(0, 60, 36, 0.12) 42%,
+            var(--bg-effect-1),
+            var(--bg-effect-2),
             transparent 68%);
     border-radius: 50%;
     animation: glow-pulse 7s ease-in-out infinite alternate;
@@ -156,7 +156,8 @@ function starStyle(n) {
 .ts-star {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6);
+    /* background: rgba(255, 255, 255, 0.6); */
+    background: var(--gray-11);
     animation: twinkle var(--star-dur, 3s) ease-in-out infinite alternate;
 }
 
@@ -216,7 +217,8 @@ function starStyle(n) {
     height: 52px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    /* border: 1px solid rgba(255, 255, 255, 0.07); */
+    border: 1px solid var(--gray-8);
     display: flex;
     align-items: center;
     justify-content: center;
