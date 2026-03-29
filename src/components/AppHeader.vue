@@ -72,8 +72,8 @@ const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'Sobre mí' },
     { id: 'projects', label: 'Proyectos' },
-    { id: 'tips', label: 'Consejos de Vue' },
-    { id: 'blog', label: 'Blog' },
+    // { id: 'tips', label: 'Consejos de Vue' },
+    // { id: 'blog', label: 'Blog' },
     { id: 'testimonials', label: 'Testimonios' },
 ]
 
