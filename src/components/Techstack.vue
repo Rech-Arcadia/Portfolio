@@ -156,8 +156,8 @@ function starStyle(n) {
 .ts-star {
     position: absolute;
     border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0.6); */
-    background: var(--gray-11);
+    background: rgba(255, 255, 255, 0.6);
+    /* background: var(--gray-11); */
     animation: twinkle var(--star-dur, 3s) ease-in-out infinite alternate;
 }
 
