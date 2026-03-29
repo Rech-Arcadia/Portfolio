@@ -1,0 +1,248 @@
+/* src/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Paleta de colores basada en el diseño */
+  /* --bg-dark: #ECE4E4;
+  --bg-card: #c06060;
+  --bg-card-hover: #1f1f1f;
+  --color-green: #71C19A;
+  --color-green-bg: #002b16;
+  --text-main: #EDEDED;
+  --text-muted: #A0A0A0;
+  --border-color: #262626; */
+
+  --green-1: #dbe1de;
+  --gray-1: #dededf;
+  --green-2: #d2dcd6;
+  --gray-2: #d9d9db;
+
+  --green-3: #bad8c8;
+  --gray-3: #ceced1;
+  --green-4: #a3d2ba;
+  --gray-4: #c3c4c8;
+  --green-5: #8ac8aa;
+  --gray-5: #babbc1;
+
+  --green-6: #6dbc97;
+  --gray-6: #b1b2b9;
+  --green-7: #45ab80;
+  --gray-7: #a4a6ae;
+  --green-8: #009562;
+  --gray-8: #90929c;
+
+  --green-9: #07ad78;
+  --gray-9: #63656f;
+  --green-10: #00a06d;
+  --gray-10: #595b65;
+
+  --green-11: #005532;
+  --gray-11: #3f4048;
+  --green-12: #0a432e;
+  --gray-12: #1e1f24;
+
+
+  --scrolled-bg: rgba(239, 239, 239, 0.82);
+  
+  /* Espaciado general */
+  --section-padding: 6rem 0;
+  --container-padding: 0 1.5rem;
+}
+
+:root[class='dark'] {
+    /* --bg-dark: #101010;
+    --bg-card: #181818;
+    --bg-card-hover: #1f1f1f;
+    --color-green: #00E676;
+    --color-green-bg: #002b16;
+    --text-main: #EDEDED;
+    --text-muted: #A0A0A0;
+    --border-color: #262626; */
+    
+    /*Background Colors*/
+    --green-1: #0b120c;
+    --gray-1: #101012;
+    --green-2: #111b14;
+    --gray-2: #19191b;
+    
+    /*Interactive Colors*/
+    --green-3: #112d1a;
+    --gray-3: #222225;
+    --green-4: #0c3d1e;
+    --gray-4: #292a2e;
+    --green-5: #104b26;
+    --gray-5: #303136;
+
+    --green-6: #185930;
+    --gray-6: #393a40;
+    --green-7: #1e6b3a;
+    --gray-7: #46484f;
+    --green-8: #217f45;
+    --gray-8: #5f606a;
+
+    --green-9: #00e676;
+    --gray-9: #6c6e79;
+    --green-10: #00db6c;
+    --gray-10: #797b86;
+
+    --green-11: #00dc6c;
+    --gray-11: #b2b3bd;
+    --green-12: #a9f4bc;
+    --gray-12: #eeeef0;
+
+
+    --scrolled-bg: rgba(16, 16, 16, 0.82);
+}
+
+
+/* === Estilos Base === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--gray-1);
+  color: var(--gray-12);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* === Layout === */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+/* === Tipografía === */
+.title-main {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.title-section {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text-green {
+  color: var(--green-9);
+}
+
+.text-muted {
+  color: var(--gray-11);
+}
+
+/* === Botones === */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--green-9);
+  color: var(--gray-1);
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 230, 118, 0.2);
+}
+
+.btn-nav {
+  background-color: var(--color-green-bg);
+  color: var(--green-9);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.btn-nav:hover {
+  background-color: #004020;
+}
+
+/* === Grids (Cuadrículas) === */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+/* === Tarjetas (Cards) === */
+/* .card {
+  background-color: var(--gray-2);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: var(--gray-3);
+}
+
+.card-header-img {
+  width: 100%;
+  height: 180px;
+  background-color: #121212;
+  border-bottom: 1px solid var(--border-color);
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+} */
+
+/* === Header (Navegación) === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--gray-8);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a:hover {
+  color: var(--gray-12);
+}
