@@ -1,4 +1,5 @@
 <script setup>
+import deusarcImg from '@/assets/images/projects/figma/DeusArc-UI.png'
 const devProjects = [
     {
         id: 1,
@@ -46,8 +47,8 @@ const designProjects = [
     {
         id: 5,
         title: 'DeusArc Web UI',
-        description: 'Sistema de diseño completo para app financiera: componentes, tokens de color y flujos de usuario.',
-        image: 'https://media.discordapp.net/attachments/532722197005860865/1486980777043300392/A0AB4AC9-4EC9-4C38-91CE-F89A120FC888.png?ex=69c77a44&is=69c628c4&hm=b2cef658c2b47624d986d97998707ade03adf5268a7ca2fbe9709a6e1950cb70&=&format=webp&quality=lossless',
+        description: 'Sistema de diseño de DeusArc para app de merch: componentes, tokens de color y flujos de usuario.',
+        image: deusarcImg,
         tags: ['Figma', 'Design System', 'Auto Layout'],
         liveUrl: 'https://www.figma.com/proto/Ep4OXhu9z0dwXHC5oo7bYj/DeusArc?node-id=197-3&t=89fjgv421irXxjmd-1',
         year: '2025',
