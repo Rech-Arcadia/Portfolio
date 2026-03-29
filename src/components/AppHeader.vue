@@ -337,7 +337,8 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
     flex-direction: column;
     gap: 0.25rem;
     padding: 1rem 1.5rem 1.5rem;
-    background: rgba(16, 16, 16, 0.96);
+    /* background: rgba(16, 16, 16, 0.96); */
+    background: var(--gray-1);
     backdrop-filter: blur(24px);
     border-bottom: 1px solid var(--gray-8);
 }
