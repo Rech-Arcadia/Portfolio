@@ -41,8 +41,12 @@
   --green-12: #0a432e;
   --gray-12: #1e1f24;
 
-
+  /*AppHeader*/
   --scrolled-bg: rgba(239, 239, 239, 0.82);
+
+  /*Techstack*/
+  --bg-effect-1: rgba(136, 209, 175, 0.32) 0%;
+  --bg-effect-2: rgba(255, 195, 219, 0.12) 42%;
   
   /* Espaciado general */
   --section-padding: 6rem 0;
@@ -90,8 +94,12 @@
     --green-12: #a9f4bc;
     --gray-12: #eeeef0;
 
-
+    /*AppHeader*/
     --scrolled-bg: rgba(16, 16, 16, 0.82);
+
+    /*Techstack*/
+    --bg-effect-1: rgba(0, 100, 60, 0.32) 0%;
+    --bg-effect-2: rgba(0, 60, 36, 0.12) 42%;
 }
 
 
