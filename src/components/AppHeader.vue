@@ -22,16 +22,6 @@
 
             <!-- CTA + Hamburger -->
             <div class="header-actions">
-                <a href="#contact" class="btn-cta" @click.prevent="scrollTo('contact')">
-                    <span class="btn-cta-text">Contactame</span>
-                    <svg class="btn-cta-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                    </svg>
-                    <span class="btn-shimmer"></span>
-                </a>
-
                 <button class="hamburger" :class="{ open: menuOpen }" @click="menuOpen = !menuOpen"
                     aria-label="Toggle menu">
                     <span></span>
@@ -51,14 +41,6 @@
                     <span class="mobile-link-dot"></span>
                     {{ link.label }}
                 </a>
-                <a href="#contact" class="btn-cta mobile-cta"
-                    @click.prevent="() => { scrollTo('contact'); menuOpen = false }">
-                    <span class="btn-cta-text">Let's chat</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                    </svg>
-                </a>
             </div>
         </Transition>
     </header>
@@ -73,8 +55,8 @@ const navLinks = [
     { id: 'about', label: 'Sobre mí' },
     { id: 'projects', label: 'Proyectos' },
     { id: 'experience', label: 'Experiencia' },
-    // { id: 'blog', label: 'Blog' },
     { id: 'testimonials', label: 'Testimonios' },
+    { id: 'contact', label: 'Contacto' },
 ]
 
 const isScrolled = ref(false)
