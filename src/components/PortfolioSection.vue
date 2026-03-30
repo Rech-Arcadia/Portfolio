@@ -57,7 +57,7 @@ export default {
   mounted() {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) this.visible = true, this.animateStats() },
-      { threshold: 0.30 }
+      { threshold: 0.20 }
     )
     const el = document.getElementById('about')
     if (el) observer.observe(el)
