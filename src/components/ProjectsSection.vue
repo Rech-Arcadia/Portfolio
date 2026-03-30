@@ -600,23 +600,161 @@ const designProjects = [
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
     .pj-columns {
-        grid-template-columns: 1fr;
-        gap: 4rem 0;
+        flex-direction: column;
+        gap: 3.5rem;
     }
 
     .pj-vdivider {
         display: none;
     }
-}
 
-@media (max-width: 560px) {
-    .pj-card {
-        grid-template-columns: 90px 1fr auto;
+    .pj-col {
+        width: 100%;
+    }
+
+    /* Grid de 2 cards por fila */
+    .pj-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Card vertical dentro del grid */
+    .pj-list .pj-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
         gap: 0.75rem;
     }
 
+    .pj-list .pj-card .pj-img-wrap {
+        aspect-ratio: 16 / 7;
+        width: 100%;
+    }
+
+    .pj-list .pj-card .pj-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 1 card por fila, horizontal (imagen + contenido) */
+    .pj-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pj-card {
+        grid-template-columns: 100px 1fr auto;
+        gap: 0.85rem;
+        padding: 0.9rem;
+    }
+
+    .pj-img-wrap {
+        aspect-ratio: 4 / 3;
+    }
+
+    .pj-title {
+        font-size: 0.85rem;
+    }
+
+    .pj-desc {
+        font-size: 0.74rem;
+        -webkit-line-clamp: 2;
+    }
+
+    .pj-btn-live,
+    .pj-btn-gh {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.64rem;
+    }
+
+    .pj-tag {
+        font-size: 0.58rem;
+    }
+
+    .pj-page-title {
+        font-size: clamp(1.7rem, 6vw, 2.4rem);
+    }
+}
+
+@media (max-width: 560px) {
+
+    /* Columns stacked */
+    .pj-columns {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .pj-vdivider {
+        display: none;
+    }
+
+    /* Card vertical */
+    .pj-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0.75rem;
+        padding: 0.85rem;
+    }
+
+    /* Imagen full-width con aspect-ratio horizontal */
+    .pj-img-wrap {
+        aspect-ratio: 16 / 7;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    /* Ocultar flecha (no hay hover en touch) */
     .pj-arrow {
         display: none;
+    }
+
+    /* Body legible */
+    .pj-body {
+        gap: 0.5rem;
+    }
+
+    .pj-body-top {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .pj-title {
+        font-size: 0.85rem;
+    }
+
+    .pj-desc {
+        font-size: 0.74rem;
+        -webkit-line-clamp: 3;
+    }
+
+    /* Botones más fáciles de tocar */
+    .pj-btn-live,
+    .pj-btn-gh {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.68rem;
+    }
+
+    /* Tags */
+    .pj-tag {
+        font-size: 0.6rem;
+    }
+
+    /* Page header */
+    .pj-page-title {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+    }
+
+    .pj-page-sub {
+        font-size: 0.88rem;
+    }
+
+    /* Col header */
+    .pj-col-header {
+        margin-bottom: 1rem;
     }
 }
 </style>
