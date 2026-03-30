@@ -57,7 +57,7 @@ export default {
   mounted() {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) this.visible = true, this.animateStats() },
-      { threshold: 0.08 }
+      { threshold: 0.30 }
     )
     const el = document.getElementById('about')
     if (el) observer.observe(el)
@@ -180,9 +180,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500&display=swap');
 
 /* ── Section ─────────────────────────────────────────────── */
-/* .ps-section {
+.ps-section {
   padding: 7rem 0;
-} */
+}
 
 /* ── Grid principal ──────────────────────────────────────── */
 .ps-grid {

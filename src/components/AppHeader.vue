@@ -72,7 +72,7 @@ const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'Sobre mí' },
     { id: 'projects', label: 'Proyectos' },
-    // { id: 'tips', label: 'Consejos de Vue' },
+    { id: 'experience', label: 'Experiencia' },
     // { id: 'blog', label: 'Blog' },
     { id: 'testimonials', label: 'Testimonios' },
 ]

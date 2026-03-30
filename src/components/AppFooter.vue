@@ -20,8 +20,8 @@ import { footerLinks } from '../data/portfolioData.js';
 
     <div class="container"
       style="border-top: 1px solid var(--gray-8); padding-top: 2rem; margin-top: 4rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
-      <span class="text-muted" style="font-size: 0.85rem;">Copyright © {{ new Date().getFullYear() }} Michael
-        Hoffmann.</span>
+      <span class="text-muted" style="font-size: 0.85rem;">Copyright © {{ new Date().getFullYear() }} Ricardo Arcadia
+        Avalos.</span>
 
       <div style="display: flex; gap: 1.5rem; align-items: center;">
         <a href="#" class="text-muted" style="font-size: 0.85rem;">X</a>

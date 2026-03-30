@@ -136,7 +136,7 @@ ul {
 }
 
 .section {
-  padding: var(--section-padding);
+  padding: 60px;
 }
 
 /* === Tipografía === */
