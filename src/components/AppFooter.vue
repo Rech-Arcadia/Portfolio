@@ -130,7 +130,7 @@ const currentYear = new Date().getFullYear();
   transform: translateX(-50%);
   width: 600px;
   height: 300px;
-  /* background: radial-gradient(ellipse at top, rgba(0, 230, 118, 0.06) 0%, transparent 70%); */
+  background: radial-gradient(ellipse at top, rgba(0, 230, 118, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -145,8 +145,22 @@ const currentYear = new Date().getFullYear();
 .ft-top-bar__line {
   flex: 1;
   height: 1px;
-  background: var(--gray-8);
+  background: linear-gradient(90deg, transparent, var(--gray-8));
 }
+
+.ft-top-bar__line:last-child {
+  background: linear-gradient(90deg, var(--gray-8), transparent);
+}
+
+.ft-top-bar__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-9);
+  flex-shrink: 0;
+  box-shadow: 0 0 12px var(--green-9);
+}
+
 
 /* ── Links grid ──────────────────────────────────────────── */
 .ft-links-grid {
