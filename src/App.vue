@@ -5,7 +5,6 @@ import HeroSection from './components/HeroSection.vue'
 import PortfolioSection from './components/PortfolioSection.vue'
 import ProjectsSection from './components/ProjectsSection.vue'
 import TestimonialsSection from './components/TestimonialsSection.vue'
-import ContactCTA from './components/ContactCTA.vue'
 import AppFooter from './components/AppFooter.vue'
 import ExperienceSection from './components/ExperienceSection.vue'
 </script>
@@ -25,8 +24,6 @@ import ExperienceSection from './components/ExperienceSection.vue'
       <ExperienceSection />
 
       <TestimonialsSection />
-
-      <ContactCTA />
     </main>
 
     <AppFooter />
