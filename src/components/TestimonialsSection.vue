@@ -5,7 +5,7 @@ import Avatar1Img from '@/assets/images/Jorge.jpg'
 const testimonials = [
   {
     id: 1,
-    text: 'Michael trabajó con nosotros como desarrollador frontend. Enriqueció el proyecto con su profunda experiencia técnica y apreciamos mucho sus habilidades como jugador de equipo.',
+    text: 'Ricardo trabajó con nosotros como desarrollador frontend. Enriqueció el proyecto con su profunda experiencia técnica y apreciamos mucho sus habilidades como jugador de equipo.',
     name: 'Jorge Eduardo',
     role: 'Arquitecto',
     company: 'UVM',
@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     id: 2,
-    text: 'Michael hizo una contribución importante al progreso del producto y, como miembro del equipo, enriqueció el trabajo colaborativo. Creó gran parte de la base que nuestros usuarios disfrutan hoy.',
+    text: 'Ricardo hizo una contribución importante al progreso del producto y, como miembro del equipo, enriqueció el trabajo colaborativo. Creó gran parte de la base que nuestros usuarios disfrutan hoy.',
     name: 'Denise Tobian',
     role: 'Product Owner',
     company: 'ProSiebenSat.1 Tech Solutions',
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     id: 3,
-    text: 'Michael trabajó como empleado fijo en nuestra empresa y siempre realizó un trabajo absolutamente excelente. Solo puedo recomendarlo sin reservas.',
+    text: 'Ricardo trabajó como empleado fijo en nuestra empresa y siempre realizó un trabajo absolutamente excelente. Solo puedo recomendarlo sin reservas.',
     name: 'Thomas Müller',
     role: 'Head of Department',
     company: 'Audi Mobility — jambit GmbH',
