@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection.vue'
 import TestimonialsSection from './components/TestimonialsSection.vue'
 import ContactCTA from './components/ContactCTA.vue'
 import AppFooter from './components/AppFooter.vue'
+import ExperienceSection from './components/ExperienceSection.vue'
 </script>
 
 <template>
@@ -20,6 +21,8 @@ import AppFooter from './components/AppFooter.vue'
       <PortfolioSection />
 
       <ProjectsSection />
+
+      <ExperienceSection />
 
       <TestimonialsSection />
 

@@ -1,5 +1,8 @@
 <script setup>
 import deusarcImg from '@/assets/images/projects/figma/DeusArc-UI.png'
+import rosysImg from '@/assets/images/projects/figma/RosysCake-UI.png'
+import rosysMobileImg from '@/assets/images/projects/figma/Mobile-RosysCake-UI.png'
+import dulcesSueñosImg from '@/assets/images/projects/develop/DulcesSueños-Web.png'
 const devProjects = [
     {
         id: 1,
@@ -13,34 +16,34 @@ const devProjects = [
     },
     {
         id: 2,
-        title: 'E-commerce Store',
-        description: 'Tienda online completa con carrito, pagos integrados con Stripe y panel de administración.',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop',
-        tags: ['Vue 3', 'Node.js', 'Stripe', 'MongoDB'],
-        liveUrl: '#',
-        githubUrl: '#',
-        year: '2024',
+        title: 'Landing Page - Dulces Sueños',
+        description: 'Landing page para campaña artesanal, con diseño responsivo, animaciones sutiles.',
+        image: dulcesSueñosImg,
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        liveUrl: 'https://rech-arcadia.github.io/',
+        githubUrl: 'https://github.com/Rech-Arcadia/Rech-Arcadia.github.io',
+        year: '2021',
     },
-    {
-        id: 3,
-        title: 'App Gestión de Tareas',
-        description: 'Herramienta colaborativa estilo Kanban con tiempo real vía WebSockets y notificaciones push.',
-        image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=800&auto=format&fit=crop',
-        tags: ['Vue 3', 'Vite', 'Tailwind', 'Socket.io'],
-        liveUrl: '#',
-        githubUrl: '#',
-        year: '2023',
-    },
-    {
-        id: 4,
-        title: 'Blog Técnico',
-        description: 'Blog estático generado con Nuxt Content, SEO optimizado y soporte para MDX.',
-        image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop',
-        tags: ['Nuxt 3', 'Nuxt Content', 'Tailwind'],
-        liveUrl: '#',
-        githubUrl: '#',
-        year: '2023',
-    },
+    // {
+    //     id: 3,
+    //     title: 'App Gestión de Tareas',
+    //     description: 'Herramienta colaborativa estilo Kanban con tiempo real vía WebSockets y notificaciones push.',
+    //     image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=800&auto=format&fit=crop',
+    //     tags: ['Vue 3', 'Vite', 'Tailwind', 'Socket.io'],
+    //     liveUrl: '#',
+    //     githubUrl: '#',
+    //     year: '2023',
+    // },
+    // {
+    //     id: 4,
+    //     title: 'Blog Técnico',
+    //     description: 'Blog estático generado con Nuxt Content, SEO optimizado y soporte para MDX.',
+    //     image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop',
+    //     tags: ['Nuxt 3', 'Nuxt Content', 'Tailwind'],
+    //     liveUrl: '#',
+    //     githubUrl: '#',
+    //     year: '2023',
+    // },
 ]
 
 const designProjects = [
@@ -49,37 +52,37 @@ const designProjects = [
         title: 'DeusArc Web UI',
         description: 'Sistema de diseño de DeusArc para app de merch: componentes, tokens de color y flujos de usuario.',
         image: deusarcImg,
-        tags: ['Figma', 'Design System', 'Auto Layout'],
+        tags: ['Figma', 'Design System', 'Dark Mode'],
         liveUrl: 'https://www.figma.com/proto/Ep4OXhu9z0dwXHC5oo7bYj/DeusArc?node-id=197-3&t=89fjgv421irXxjmd-1',
         year: '2025',
     },
     {
         id: 6,
-        title: 'Dashboard Dark UI Kit',
-        description: 'Kit con +120 componentes dark mode listos: tablas, gráficos, formularios y navegación.',
-        image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop',
-        tags: ['Figma', 'UI Kit', 'Dark Mode', 'Variables'],
-        liveUrl: '#',
-        year: '2024',
+        title: 'Rosys Cake UI',
+        description: 'Diseño de Ecommerce de pastelería: interfaz visual, experiencia de usuario y prototipo interactivo.',
+        image: rosysImg,
+        tags: ['Figma', 'Design System', 'Dark Mode'],
+        liveUrl: 'https://www.figma.com/proto/aRXZrmP2qCHjmoHd4UAUWr/Rosy-s-Cake?node-id=1-2&p=f&t=aigmBtMm6qYZIaaw-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+        year: '2026',
     },
     {
         id: 7,
-        title: 'Brand Identity — Startup',
-        description: 'Identidad visual completa: logo, paleta, tipografía, mockups y guía de marca.',
-        image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=800&auto=format&fit=crop',
-        tags: ['Figma', 'Branding', 'Logo Design'],
-        liveUrl: '#',
-        year: '2023',
-    },
-    {
-        id: 8,
-        title: 'Mobile App — Health',
-        description: 'Diseño UX/UI de app móvil: onboarding, dashboard y flujos de seguimiento de salud.',
-        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop',
+        title: 'Mobile App - Rosys Cake',
+        description: 'Diseño UX/UI de app móvil para Rosys Cake: onboarding, catálogo de productos y proceso de compra.',
+        image: rosysMobileImg,
         tags: ['Figma', 'Mobile UI', 'Prototype', 'UX'],
-        liveUrl: '#',
-        year: '2023',
+        liveUrl: 'https://www.figma.com/proto/w8bGPypkegjWEZzIZrkH25/Untitled?node-id=5-6&starting-point-node-id=5%3A6&t=F2HPXavj6ub0ryjX-1',
+        year: '2025',
     },
+    // {
+    //     id: 8,
+    //     title: 'Mobile App — Health',
+    //     description: 'Diseño UX/UI de app móvil: onboarding, dashboard y flujos de seguimiento de salud.',
+    //     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop',
+    //     tags: ['Figma', 'Mobile UI', 'Prototype', 'UX'],
+    //     liveUrl: '#',
+    //     year: '2023',
+    // },
 ]
 </script>
 
@@ -90,7 +93,7 @@ const designProjects = [
             <!-- ── Page header ──────────────────────────────── -->
             <div class="pj-page-header">
                 <span class="pj-eyebrow">Portafolio</span>
-                <h2 class="pj-page-title">Trabajo seleccionado</h2>
+                <h2 class="pj-page-title">Trabajo realizado</h2>
                 <p class="pj-page-sub">Desarrollo web y diseño de interfaces — proyectos reales, resultados reales.</p>
             </div>
 
@@ -240,16 +243,6 @@ const designProjects = [
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap');
 
-/* ── Colores para Figma ──────────────────────────────────── */
-:root {
-    --figma-color: #a259ff;
-    --figma-bg: rgba(162, 89, 255, 0.08);
-    --figma-border: rgba(162, 89, 255, 0.2);
-}
-
-/* ── Section ─────────────────────────────────────────────── */
-
-
 /* ── Page header ─────────────────────────────────────────── */
 .pj-page-header {
     display: flex;
@@ -284,18 +277,18 @@ const designProjects = [
     color: var(--gray-11);
     font-weight: 300;
     margin: 0;
-    max-width: 480px;
+    max-width: 520px;
     line-height: 1.7;
 }
 
 /* ── Layout de dos columnas ──────────────────────────────── */
 .pj-columns {
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 1px 1fr;
     gap: 0 3.5rem;
-    align-items: start; */
+    align-items: start;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem 3.5rem;
 }
 
@@ -414,7 +407,7 @@ const designProjects = [
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 6 / 5;
     flex-shrink: 0;
 }
 
@@ -516,15 +509,15 @@ const designProjects = [
 }
 
 .pj-tag--dev {
-    color: var(--color-green);
+    color: var(--green-9);
     background: var(--green-2);
     border: 1px solid rgba(0, 230, 118, 0.15);
 }
 
 .pj-tag--figma {
-    color: var(--figma-color);
-    background: var(--figma-bg);
-    border: 1px solid var(--figma-border);
+    color: #a259ff;
+    background: rgba(162, 89, 255, 0.08);
+    border: 1px solid rgba(162, 89, 255, 0.2);
 }
 
 /* ── Botones dentro de card ──────────────────────────────── */
@@ -556,7 +549,7 @@ const designProjects = [
 }
 
 .pj-btn-live--figma {
-    background: var(--figma-color);
+    background: #773ac7;
     color: #fff;
 }
 
