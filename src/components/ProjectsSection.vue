@@ -3,16 +3,18 @@ import deusarcImg from '@/assets/images/projects/figma/DeusArc-UI.png'
 import rosysImg from '@/assets/images/projects/figma/RosysCake-UI.png'
 import rosysMobileImg from '@/assets/images/projects/figma/Mobile-RosysCake-UI.png'
 import dulcesSueñosImg from '@/assets/images/projects/develop/DulcesSueños-Web.png'
+import nutriVidaImg from '@/assets/images/projects/develop/NutriVida-Web.png'
+
 const devProjects = [
     {
         id: 1,
-        title: 'Dashboard Analytics',
-        description: 'Plataforma SaaS con visualización de datos en tiempo real, gráficos interactivos y sistema de roles.',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
-        tags: ['Vue 3', 'Pinia', 'TypeScript', 'Chart.js'],
-        liveUrl: '#',
-        githubUrl: '#',
-        year: '2024',
+        title: 'NutriVida',
+        description: 'LandingPage para nutricionista profesional, moderna, con responsive design y animaciones',
+        image: nutriVidaImg,
+        tags: ['Vue 3', 'Pinia', 'TypeScript', 'GSAP'],
+        liveUrl: 'https://nutricion-page.vercel.app/',
+        githubUrl: 'https://github.com/Rech-Arcadia/nutricion',
+        year: '2026',
     },
     {
         id: 2,
